@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp2.DataBase;
+using WpfApp2.HelpClass;
+using WpfApp2.Views;
 
 namespace WpfApp2
 {
@@ -23,6 +26,28 @@ namespace WpfApp2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private async void AuthClick(object sender, RoutedEventArgs e)
+        {
+            var login = this.login.Text;
+            var password = this.password.Password;
+            Laborants user = null;
+            await Task.Run(() =>
+            {
+                using(var db = new MedicDb()) 
+                {
+                     user = db.Laborants.ToList().Find(l=> l.Login == login && l.Password == password);
+                }
+            });
+
+            if(user == null) 
+            {
+                HelpMb.MessageBoxError("Ошибка аунтификации", "Неверный логин или пароль!");
+                return;
+            }
+
+            new MenuView().ShowDialog();
         }
     }
 }

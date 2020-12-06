@@ -1,0 +1,36 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.Views"
+        xmlns:DataBase="clr-namespace:WpfApp2.DataBase" x:Class="WpfApp2.Views.BiomaterialView"
+        mc:Ignorable="d"
+        Title="BiomaterialView" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Style="{StaticResource ButtonStyle}" Content="Выйти"/>
+            <Button Style="{StaticResource ButtonStyle}" Content="Назад"/>
+        </StackPanel>
+
+        <DataGrid x:Name="MyList" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Binding="{Binding Id}" Header="Код" Width="SizeToHeader"/>
+                <DataGridTextColumn  Binding="{Binding Clients.Name}" Header="Имя клиента" Width="SizeToHeader"/>
+                <DataGridTextColumn  Binding="{Binding Clients.Phone}" Header="Телефон клиента" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button Style="{StaticResource ButtonStyle}" Content="Добавить" Click="Additem"/>
+            <Button Style="{StaticResource ButtonStyle}" Content="Обновить" Click="Updateitem"/>
+            <Button Style="{StaticResource ButtonStyle}" Content="Удалить" Click="Deleteitem"/>
+        </StackPanel>
+    </Grid>
+</Window>

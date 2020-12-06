@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="251.675" Width="414.948">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Логин" Grid.Row="0">
+            <TextBox Style="{StaticResource TextBoxStyle}" x:Name="login"/>
+        </GroupBox>
+        <GroupBox Header="Пароль" Grid.Row="1">
+            <PasswordBox Style="{StaticResource PasswordStyle}" x:Name="password"/>
+        </GroupBox>
+        <Button Content="Войти" Grid.Row="2" Click="AuthClick" Style="{StaticResource ButtonStyle}"/>
     </Grid>
 </Window>
