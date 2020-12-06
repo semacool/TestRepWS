@@ -29,3 +29,15 @@ D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\WpfApp2.exe
 D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\WpfApp2.pdb
 D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\Views\BiomaterialView.g.cs
 D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\Views\BiomaterialView.baml
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\Views\Pages\BiomaterialPageView.g.cs
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\Views\Pages\BiomaterialPageView.baml
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\System.Memory.dll
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\System.Text.Json.dll
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\System.Numerics.Vectors.dll
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\System.Text.Encodings.Web.dll
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\obj\Debug\WpfApp2.exe.config
+D:\Programming\VsStudioSaves\TestRepWS\WpfApp2\WpfApp2\bin\Debug\System.Buffers.dll

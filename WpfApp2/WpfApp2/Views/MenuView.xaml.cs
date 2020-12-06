@@ -23,5 +23,10 @@ namespace WpfApp2.Views
         {
             InitializeComponent();
         }
+
+        private void MaterialClick(object sender, RoutedEventArgs e)
+        {
+            new BiomaterialView().ShowDialog();
+        }
     }
 }

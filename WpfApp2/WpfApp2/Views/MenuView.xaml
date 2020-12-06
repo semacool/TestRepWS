@@ -13,7 +13,7 @@
             <RowDefinition  Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button Content="Биоматериаы" Grid.Row="0" Style="{StaticResource ButtonStyle}" />
+        <Button Content="Биоматериаы" Grid.Row="0" Style="{StaticResource ButtonStyle}" Click="MaterialClick" />
         <Button Content="Исследования" Grid.Row="1" Style="{StaticResource ButtonStyle}"/>
         <Button Content="Лаборанты" Grid.Row="2" Style="{StaticResource ButtonStyle}"/>
     </Grid>

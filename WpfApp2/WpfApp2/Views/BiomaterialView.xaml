@@ -15,11 +15,11 @@
 
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
-            <Button Style="{StaticResource ButtonStyle}" Content="Выйти"/>
-            <Button Style="{StaticResource ButtonStyle}" Content="Назад"/>
+            <Button Style="{StaticResource ButtonStyle}" Content="Выйти" Click="ExitClick"/>
+            <Button Style="{StaticResource ButtonStyle}" Content="Назад" Click="CloseClick"/>
         </StackPanel>
 
-        <DataGrid x:Name="MyList" Grid.Row="1">
+        <DataGrid x:Name="MyList" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn  Binding="{Binding Id}" Header="Код" Width="SizeToHeader"/>
                 <DataGridTextColumn  Binding="{Binding Clients.Name}" Header="Имя клиента" Width="SizeToHeader"/>

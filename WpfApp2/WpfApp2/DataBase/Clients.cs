@@ -26,5 +26,10 @@ namespace WpfApp2.DataBase
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Materials> Materials { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
